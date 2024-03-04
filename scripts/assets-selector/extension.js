@@ -50,7 +50,3 @@ async function modifyCopyNonImageAsset(asset) {
         ? copyToClipboardWithLink(asset.name, rendition.href)
         : { success: false, error: 'No same format rendition!' };
 }
-
-// Register modified versions of the methods
-registerModifiedMethod('copyImageAsset', modifyCopyImageAsset);
-registerModifiedMethod('copyNonImageAsset', modifyCopyNonImageAsset);
