@@ -1,7 +1,7 @@
 const customBlocksNameConfig = new Map([['video', 'core embed']]);
 
 customPrintSuccess = () => {
-    console.log("Copied to Clipboard - custom code");
+    console.log("Copied to Clipboard - custom cod ssse");
 }
 
 // Define modified versions of the methods
