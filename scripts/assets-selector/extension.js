@@ -5,7 +5,7 @@ customPrintSuccess = () => {
 }
 
 function modifiedCreateVideoBlock (asset, rendition) {
-   copyToClipboardWithBlock(asset.name, rendition.href, 'Core Embed (V2)');
+   return copyToClipboardWithBlock(asset.name, rendition.href, 'Core Embed (V2)');
 }
 
 async function copyToClipboardWithBlock(name, link, blockName) {
