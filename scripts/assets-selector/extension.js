@@ -5,7 +5,7 @@ customPrintSuccess = () => {
 }
 
 // Define modified versions of the methods
-async function modifyCopyImageAsset(asset) {
+async function modifiedCopyImageAsset(asset) {
     console.log("custom modifyCopyImageAsset");
     let copyResult = {
         success: false,
@@ -34,7 +34,7 @@ async function modifyCopyImageAsset(asset) {
     return copyResult;
 }
 
-async function modifyCopyNonImageAsset(asset) {
+async function modifiedCopyNonImageAsset(asset) {
     console.log("custom modifyCopyNonImageAsset");
     let rendition;
     if (isVideoAsset(asset)) {
