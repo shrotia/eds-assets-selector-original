@@ -30,18 +30,18 @@ const AssetSelectorExtensionMethods = new Map([
         const { asset, rendition } = options;
         // Your logic for handling image assets
         console.log(`Handling image asset with options: asset=${asset}, rendition=${rendition}`);
-        copyBlockToClipboard(asset.name, rendition.href, 'Image');
+        return copyBlockToClipboard(asset.name, rendition.href, 'Image');
     }],
     ['video', function(options = {}) {
         const { asset, rendition } = options;
         // Your logic for handling video assets
         console.log(`Handling video asset with options: asset=${asset}, rendition=${rendition}`);
-        copyBlockToClipboard(asset.name, rendition.href, 'Video');
+        return copyBlockToClipboard(asset.name, rendition.href, 'Video');
     }],
     ['other', function(options = {}) {
         const { asset, rendition } = options;
         // Your logic for handling PDF assets
         console.log(`Handling PDF asset with options: asset=${asset}, rendition=${rendition}`);
-        copyBlockToClipboard(asset.name, rendition.href, 'Pdf');
+        return copyBlockToClipboard(asset.name, rendition.href, 'Pdf');
     }]
 ]);
