@@ -41,7 +41,7 @@ const AssetSelectorExtensionMethods = new Map([
     ['other', function(options = {}) {
         const { asset, rendition } = options;
         // Your logic for handling Documents assets
-        console.log(`Handling PDF asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
+        console.log(`Handling Document asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
         return copyBlockToClipboard(asset.name, rendition.href, 'Custom Document (Variant C)');
     }]
 ]);
