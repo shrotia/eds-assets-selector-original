@@ -29,19 +29,19 @@ const AssetSelectorExtensionMethods = new Map([
     ['image', function(options = {}) {
         const { asset, rendition } = options;
         // Your logic for handling image assets
-        console.log(`Handling image asset with options: asset=${asset}, rendition=${rendition}`);
+        console.log(`Handling image asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
         return copyBlockToClipboard(asset.name, rendition.href, 'Image');
     }],
     ['video', function(options = {}) {
         const { asset, rendition } = options;
         // Your logic for handling video assets
-        console.log(`Handling video asset with options: asset=${asset}, rendition=${rendition}`);
+        console.log(`Handling video asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
         return copyBlockToClipboard(asset.name, rendition.href, 'Video');
     }],
     ['other', function(options = {}) {
         const { asset, rendition } = options;
-        // Your logic for handling PDF assets
-        console.log(`Handling PDF asset with options: asset=${asset}, rendition=${rendition}`);
+        // Your logic for handling Documents assets
+        console.log(`Handling PDF asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
         return copyBlockToClipboard(asset.name, rendition.href, 'Document');
     }]
 ]);
