@@ -51,8 +51,8 @@
       ]
     },
     {
-      "header": "Food Category",
-      "groupKey": "FoodCategoryGroup",
+      "header": "Assets Tags",
+      "groupKey": "AssetTagsGroup",
       "fields": [
         {
           "element": "checkbox",
