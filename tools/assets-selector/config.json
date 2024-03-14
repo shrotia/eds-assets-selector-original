@@ -7,10 +7,6 @@
     {
       "mimeType": "video/quicktime",
       "value": "Custom Video Quicktime"
-    },
-    {
-      "mimeType": "video/mp4",
-      "value": "Custom Video MP4"
     }
   ],
   "copyMode": [
@@ -20,10 +16,6 @@
     },
     {
       "mimeType": "image/jpeg",
-      "value": "binary"
-    },
-    {
-      "mimeType": "image/png",
       "value": "binary"
     },
     {
