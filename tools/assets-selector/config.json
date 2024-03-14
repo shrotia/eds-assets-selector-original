@@ -1,6 +1,24 @@
 {
-  "videoBlockName": "Core Embed (Variant 1)",
-  "imageAsAnchor": true,
+  "blockName": [
+    {
+      "mimeType": "video/*",
+      "value": "Custom Video"
+    },
+    {
+      "mimeType": "video/quicktime",
+      "value": "Custom Video Quicktime"
+    }
+  ],
+  "copyMode": [
+    {
+      "mimeType": "image/*",
+      "value": "reference"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "value": "binary"
+    }
+  ],
   "filterSchema": [
     {
       "header": "File Type",
