@@ -2,25 +2,7 @@
   "blockName": [
     {
       "mimeType": "video/*",
-      "value": "Custom Video"
-    },
-    {
-      "mimeType": "video/quicktime",
-      "value": "Custom Video Quicktime"
-    }
-  ],
-  "copyMode": [
-    {
-      "mimeType": "image/*",
-      "value": "reference"
-    },
-    {
-      "mimeType": "image/jpeg",
-      "value": "binary"
-    },
-    {
-      "mimeType": "image/tiff",
-      "value": "binary"
+      "value": "Core Embed"
     }
   ],
   "filterSchema": [
