@@ -4,5 +4,11 @@
       "mimeType": "video/*",
       "value": "Core Embed"
     }
+  ],
+  "headerStyle": [
+    {
+      "mimeType": "video/*",
+      "value": "background-color:#f5680a;color:#fff"
+    }
   ]
 }
