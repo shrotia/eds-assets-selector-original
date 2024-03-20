@@ -10,5 +10,11 @@
       "mimeType": "video/*",
       "value": "background-color:#f5680a;color:#fff"
     }
+  ],
+  "blockTemplate": [
+    {
+      "mimeType": "video/*",
+      "value": "<table border='1'>\n      <tr>\n        <td style=\"background-color:#f5680a;color:#fff\">${blockName}</td>\n      </tr>\n      <tr>\n        <td><a href=${rendition.href}>${asset.name}</a></td>\n      </tr>\n    </table>"
+    }
   ]
 }
