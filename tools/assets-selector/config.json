@@ -16,5 +16,68 @@
       "mimeType": "video/*",
       "value": "<table border='1' style=\"width:100%\">\n  <tr>\n        <td style=\"background-color:#f5680a;color:#fff\">${blockName}</td>\n      </tr>\n      <tr>\n        <td><a href=${rendition.href}>${asset.name}</a></td>\n      </tr>\n    </table>"
     }
+  ],
+  "filterSchema": [
+    {
+      "header": "File Type",
+      "groupKey": "TopGroup",
+      "fields": [
+        {
+          "element": "checkbox",
+          "name": "type",
+          "defaultValue": ["directory", "file"],
+          "readOnly": true,
+          "options": [
+            {
+              "label": "Directories",
+              "value": "directory"
+            },
+            {
+              "label": "Files",
+              "value": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Mime Types",
+      "groupKey": "MimeTypeGroup",
+      "fields": [
+        {
+          "defaultValue": ["image/jpeg", "image/png", "image/tiff"],
+          "element": "checkbox",
+          "name": "type",
+          "options": [
+            {
+              "label": "JPG",
+              "value": "image/jpeg"
+            },
+            {
+              "label": "PNG",
+              "value": "image/png"
+            },
+            {
+              "label": "TIFF",
+              "value": "image/tiff"
+            }
+          ],
+          "columns": 2
+        }
+      ]
+    },
+    {
+      "header": "Assets Tags",
+      "groupKey": "AssetTagsGroup",
+      "fields": [
+        {
+          "element": "checkbox",
+          "name": "property=metadata.application.xcm:keywords.value",
+          "header": "Contextual Invocation",
+          "groupKey": "Tag",
+          "columns": 3
+        }
+      ]
+    }
   ]
 }
