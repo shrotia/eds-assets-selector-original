@@ -73,11 +73,9 @@
         {
           "element": "checkbox",
           "name": "property=metadata.application.xcm:keywords.value",
-          "header": "Contextual Invocation",
-          "groupKey": "Tag",
-          "columns": 3
         }
-      ]
+      ],
+      "columns": 3
     }
   ]
 }
