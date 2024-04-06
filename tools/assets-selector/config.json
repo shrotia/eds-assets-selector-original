@@ -71,8 +71,8 @@
       "groupKey": "AssetTagsGroup",
       "fields": [
         {
-          "element": "checkbox",
-          "name": "property=metadata.application.xcm:keywords.value",
+          "element": "taggroup",
+          "name": "property=metadata.application.xcm:keywords.value=",
           "columns": 3
         }
       ]
