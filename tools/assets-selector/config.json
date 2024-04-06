@@ -73,9 +73,9 @@
         {
           "element": "checkbox",
           "name": "property=metadata.application.xcm:keywords.value",
+          "columns": 3
         }
-      ],
-      "columns": 3
+      ]
     }
   ]
 }
