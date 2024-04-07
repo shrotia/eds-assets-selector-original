@@ -60,6 +60,10 @@
             {
               "label": "TIFF",
               "value": "image/tiff"
+            },
+            {
+              "label": "Zip Archive",
+              "value": "application/zip"
             }
           ],
           "columns": 2
