@@ -72,7 +72,7 @@
       "fields": [
         {
           "element": "taggroup",
-          "name": "property=metadata.application.xcm:keywords.value=",
+          "name": "property=xcm:keywords.id=",
           "columns": 3
         }
       ]
