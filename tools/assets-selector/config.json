@@ -73,6 +73,7 @@
         {
           "element": "taggroup",
           "name": "property=metadata.application.xcm:keywords.value",
+          "defaultValue": ["Pfizer : PFE Brands / CIBINQO"],
           "options": [
             {
               "label": "Pfizer : PFE Brands / CIBINQO",
