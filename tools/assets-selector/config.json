@@ -72,7 +72,6 @@
       "fields": [
         {
           "element": "taggroup",
-          "defaultValue": [],
           "name": "property=metadata.application.xcm:keywords.id",
           "columns": 3
         }
