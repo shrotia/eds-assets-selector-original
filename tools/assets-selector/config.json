@@ -71,7 +71,6 @@
       "groupKey": "AssetTagsGroup",
       "fields": [
         {
-          "defaultValue": ["pfizer:pfe-brands/cibinqo"],
           "element": "taggroup",
           "name": "property=metadata.application.xcm:keywords.id",
           "columns": 3
