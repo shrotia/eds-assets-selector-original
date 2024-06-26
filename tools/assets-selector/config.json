@@ -69,6 +69,7 @@
     {
       "header": "Assets Tags",
       "groupKey": "AssetTagsGroup",
+      "defaultValue": ["pfizer:pfe-brands/cibinqo"],
       "fields": [
         {
           "element": "taggroup",
