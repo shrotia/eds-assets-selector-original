@@ -24,6 +24,7 @@
       "fields": [
         {
           "defaultValue": ["image/*", "video/*"],
+          "excludeTags": ["image/*", "video/*"],
           "element": "checkbox",
           "name": "type",
           "options": [
@@ -83,6 +84,5 @@
       "header": "Expiration Status",
       "groupKey": "ExpirationGroup"
     }
-  ],
-  "hideFilters": "true"
+  ]
 }
