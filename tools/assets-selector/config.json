@@ -23,8 +23,8 @@
       "groupKey": "TopGroup",
       "fields": [
         {
-          "defaultValue": ["image/*", "video/*"],
-          "excludeTags": ["image/*", "video/*"],
+          "defaultValue": ["image/*", "video/*", "application/pdf"],
+          "excludeTags": ["image/*", "video/*", "PDFs"],
           "element": "checkbox",
           "name": "type",
           "options": [
@@ -35,6 +35,10 @@
             {
               "label": "Videos",
               "value": "video/*"
+            },
+            {
+              "label": "PDFs",
+              "value": "application/pdf"
             }
           ],
           "columns": 2
